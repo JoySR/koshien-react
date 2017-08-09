@@ -4,14 +4,13 @@ import config from '../config/config';
 import Card from "./Card";
 import Games from "./Games";
 import GameFile from '../assets/data/game.json';
-
-console.log(GameFile);
+import { getTodaysIndexInTimeLine } from "../controller/controller";
 
 export default class Main extends Component {
-
   state = {
     message: '',
-    gameList: GameFile.schedule[0].games,
+    currentDateIndex: getTodaysIndexInTimeLine(),
+    gameList: GameFile.schedule[getTodaysIndexInTimeLine()].games,
   };
 
   showGameOfTheDate = date => {
@@ -29,6 +28,7 @@ export default class Main extends Component {
           <h2><i className="fa fa-calendar" />日程</h2>
           <TimeLine
             dateList={config.dateList}
+            currentDateIndex={this.state.currentDateIndex}
             showGamesOfTheDate={this.showGameOfTheDate}
           />
           <div className="message" id="message">

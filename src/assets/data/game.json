@@ -356,12 +356,10 @@
           "isThirdHome": true,
           "first": {
             "name": "彦根東",
-            "prefecture": "",
             "scores": [0, 1, 3, 0, 0, 0, 0, 0, "2X"]
           },
           "third": {
             "name": "波佐見",
-            "prefecture": "",
             "scores": [0, 1, 1, 0, 0, 1, 2, 0, 0]
           },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017080861.html",
@@ -373,12 +371,10 @@
           "isThirdHome": true,
           "first": {
             "name": "済美",
-            "prefecture": "",
             "scores": [1, 0, 1, 0, 4, 2, 0, 2, "X"]
           },
           "third": {
             "name": "東筑",
-            "prefecture": "",
             "scores": [0, 0, 0, 3, 1, 0, 0, 0, 0]
           },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017080862.html",
@@ -390,12 +386,10 @@
           "isThirdHome": false,
           "first": {
             "name": "藤枝明誠",
-            "prefecture": "",
             "scores": [1, 0, 0, 0, 3, 2, 0, 0, 0, 0, 0]
           },
           "third": {
             "name": "津田学園",
-            "prefecture": "",
             "scores": [0, 0, 0, 4, 2, 0, 0, 0, 0, 0, "1X"]
           },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017080863.html",
@@ -409,48 +403,61 @@
           "id": "2-1",
           "time": "08:00",
           "round": "1回戦",
-          "first": "作新学院",
-          "isThirdHome": false,
-          "third": "盛岡大付",
-          "score": "1-4",
-          "fScore": [1, 0, 0, 0, 0, 0, 0, 0, 0],
-          "tScore": [0, 1, 0, 0, 3, 0, 0, 0, "X"],
+          "first": {
+            "name": "作新学院",
+            "scores": [1, 0, 0, 0, 0, 0, 0, 0, 0]
+          },
+          "third": {
+            "name": "盛岡大付",
+            "prefecture": "",
+            "scores": [0, 1, 0, 0, 3, 0, 0, 0, "X"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017080961.html",
           "video": "http://www.asahi.com/koshien/digest/20170809_1d.html"
         },{
           "id": "2-2",
           "time": "10:30",
           "round": "1回戦",
-          "first": "松商学園",
-          "isThirdHome": false,
-          "third": "土浦日大",
-          "score": "12-3",
-          "fScore": [1, 1, 0, 1, 1, 2, 2, 3, 1],
-          "tScore": [0, 0, 0, 0, 0, 1, 0, 2, 0],
+          "first": {
+            "name": "松商学園",
+            "scores": [1, 1, 0, 1, 1, 2, 2, 3, 1]
+          },
+          "third": {
+            "name": "土浦日大",
+            "prefecture": "",
+            "scores": [0, 0, 0, 0, 0, 1, 0, 2, 0]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017080962.html",
           "video": "http://www.asahi.com/koshien/digest/20170809_2d.html"
         },{
           "id": "2-3",
           "time": "13:00",
           "round": "1回戦",
-          "first": "前橋育英",
-          "isThirdHome": false,
-          "third": "山梨学院",
-          "score": "12-5",
-          "fScore": [1, 0, 5, 0, 1, 4, 1, 0, 0],
-          "tScore": [0, 0, 0, 3, 0, 2, 0, 0, 0],
+          "first": {
+            "name": "前橋育英",
+            "scores": [1, 0, 5, 0, 1, 4, 1, 0, 0]
+          },
+          "third": {
+            "name": "山梨学院",
+            "prefecture": "",
+            "scores": [0, 0, 0, 3, 0, 2, 0, 0, 0]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017080963.html",
           "video": "http://www.asahi.com/koshien/digest/20170809_3d.html"
         },{
           "id": "2-4",
           "time": "15:30",
           "round": "1回戦",
-          "first": "日大山形",
           "isThirdHome": true,
-          "third": "明徳義塾",
-          "score": "",
-          "fScore": [1, 2, "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": [1, 1, "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "日大山形",
+            "scores": [1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+          },
+          "third": {
+            "name": "明徳義塾",
+            "prefecture": "",
+            "scores": [1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 3]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017080964.html",
           "video": "http://www.asahi.com/koshien/digest/20170809_4d.html"
         }

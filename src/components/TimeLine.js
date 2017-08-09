@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 
 const TimeLine = (props) => (
   <ul id="time-table">
@@ -6,9 +7,14 @@ const TimeLine = (props) => (
       props.dateList.map((date, index) => {
         return (
           <li
-            className={date.isRestDay ? 'rest' : ''}
+            className={
+              classNames({
+                rest: date.isRestDay,
+                today: props.currentDateIndex === index
+              })
+            }
             key={index}
-            onClick={props.showGamesOfTheDate.bind(this, date)}
+            onClick={props.showGamesOfTheDate.bind(this, date, index)}
           >
             <span className="date">
               {date.date}

@@ -32,6 +32,7 @@ const Games = (props) => (
           third={game.third}
           newsLink={game.news}
           videoLink={game.video}
+          isThirdHome={game.isThirdHome}
         />
       ))
     }
