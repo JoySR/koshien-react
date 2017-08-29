@@ -48,10 +48,12 @@ export default {
     isRestDay: true
   }, {
     date: "21",
-    weekday: "日"
+    weekday: "日",
+    isAfterRestDay: true
   }, {
     date: "22",
-    weekday: "月"
+    weekday: "月",
+    isAfterRestDay: true
   }],
   linkList: [{
     url: 'http://www.nhk.or.jp/koushien',

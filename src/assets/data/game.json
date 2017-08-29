@@ -76,14 +76,14 @@
       "prefecture-id": "gunma",
       "name": "前橋育英",
       "count": "２年連続３回目",
-      "games": ["2-3"]
+      "games": ["2-3", "8-2"]
     }, {
       "id": 12,
       "prefecture": "埼玉",
       "prefecture-id": "saitama",
       "name": "花咲徳栄",
       "count": "３年連続５回目",
-      "games":["3-2"]
+      "games":["3-2", "8-3"]
     }, {
       "id": 13,
       "prefecture": "千葉",
@@ -125,7 +125,7 @@
       "prefecture-id": "nagano",
       "name": "松商学園",
       "count": "９年ぶり３６回目",
-      "games": ["2-2"]
+      "games": ["2-2", "8-1"]
     }, {
       "id": 19,
       "prefecture": "山梨",
@@ -174,7 +174,7 @@
       "prefecture-id": "ishikawa",
       "name": "日本航空石川",
       "count": "８年ぶり２回目",
-      "games": ["3-1"]
+      "games": ["3-1", "8-3"]
     }, {
       "id": 26,
       "prefecture": "福井",
@@ -286,7 +286,7 @@
       "prefecture-id": "kochi",
       "name": "明徳義塾",
       "count": "８年連続１９回目",
-      "games":["2-4"]
+      "games":["2-4", "8-2"]
     }, {
       "id": 42,
       "prefecture": "福岡",
@@ -409,7 +409,6 @@
           },
           "third": {
             "name": "盛岡大付",
-            "prefecture": "",
             "scores": [0, 1, 0, 0, 3, 0, 0, 0, "X"]
           },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017080961.html",
@@ -424,7 +423,6 @@
           },
           "third": {
             "name": "土浦日大",
-            "prefecture": "",
             "scores": [0, 0, 0, 0, 0, 1, 0, 2, 0]
           },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017080962.html",
@@ -439,7 +437,6 @@
           },
           "third": {
             "name": "山梨学院",
-            "prefecture": "",
             "scores": [0, 0, 0, 3, 0, 2, 0, 0, 0]
           },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017080963.html",
@@ -455,7 +452,6 @@
           },
           "third": {
             "name": "明徳義塾",
-            "prefecture": "",
             "scores": [1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 3]
           },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017080964.html",
@@ -469,48 +465,60 @@
           "id": "3-1",
           "time": "08:00",
           "round": "1回戦",
-          "first": "木更津総合",
-          "isThirdHome": false,
-          "third": "日本航空石川",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "isThirdHome": true,
+          "first": {
+            "name": "木更津総合",
+            "scores": [0, 2, 0, 3, 0, 0, 0, 0, 0]
+          },
+          "third": {
+            "name": "日本航空石川",
+            "scores": [1, 0, 0, 0, 0, 0, 0, 1, 4]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081061.html",
           "video": "http://www.asahi.com/koshien/digest/20170810_1d.html"
         },{
           "id": "3-2",
           "time": "10:30",
           "round": "1回戦",
-          "first": "開星",
-          "isThirdHome": false,
-          "third": "花咲徳栄",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "isThirdHome": true,
+          "first": {
+            "name": "開星",
+            "scores": [0, 0, 0, 0, 0, 0, 0, 0, 0]
+          },
+          "third": {
+            "name": "花咲徳栄",
+            "scores": [1, 2, 1, 0, 0, 0, 5, 0, 0]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081062.html",
           "video": "http://www.asahi.com/koshien/digest/20170810_2d.html"
         },{
           "id": "3-3",
           "time": "13:00",
           "round": "1回戦",
-          "first": "聖光学院",
           "isThirdHome": false,
-          "third": "おかやま山陽",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "聖光学院",
+            "scores": [0, 2, 1, "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "おかやま山陽",
+            "scores": [0, 0, "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081063.html",
           "video": "http://www.asahi.com/koshien/digest/20170810_3d.html"
         },{
           "id": "3-4",
           "time": "15:30",
           "round": "1回戦",
-          "first": "早稲田佐賀",
           "isThirdHome": false,
-          "third": "聖心ウルスラ",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "早稲田佐賀",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "聖心ウルスラ",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081064.html",
           "video": "http://www.asahi.com/koshien/digest/20170810_4d.html"
         }
@@ -522,48 +530,60 @@
           "id": "4-1",
           "time": "08:00",
           "round": "1回戦",
-          "first": "広陵",
           "isThirdHome": false,
-          "third": "中京大中京",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "広陵",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "中京大中京",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081161.html",
           "video": "http://www.asahi.com/koshien/digest/20170811_1d.html"
         },{
           "id": "4-2",
           "time": "10:30",
           "round": "1回戦",
-          "first": "横浜",
           "isThirdHome": false,
-          "third": "秀岳館",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "横浜",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "秀岳館",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081162.html",
           "video": "http://www.asahi.com/koshien/digest/20170811_2d.html"
         },{
           "id": "4-3",
           "time": "13:00",
           "round": "1回戦",
-          "first": "興南",
           "isThirdHome": false,
-          "third": "智弁和歌山",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "興南",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "智弁和歌山",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081163.html",
           "video": "http://www.asahi.com/koshien/digest/20170811_3d.html"
         },{
           "id": "4-4",
           "time": "15:30",
           "round": "1回戦",
-          "first": "大阪桐蔭",
           "isThirdHome": false,
-          "third": "米子松蔭",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "大阪桐蔭",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "米子松蔭",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081164.html",
           "video": "http://www.asahi.com/koshien/digest/20170811_4d.html"
         }
@@ -575,36 +595,45 @@
           "id": "5-1",
           "time": "09:30",
           "round": "1回戦",
-          "first": "滝川西",
           "isThirdHome": false,
-          "third": "仙台育英",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "滝川西",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "仙台育英",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081261.html",
           "video": "http://www.asahi.com/koshien/digest/20170812_1d.html"
         },{
           "id": "5-2",
           "time": "12:00",
           "round": "1回戦",
-          "first": "日本文理",
           "isThirdHome": false,
-          "third": "鳴門渦潮",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "日本文理",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "鳴門渦潮",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081262.html",
           "video": "http://www.asahi.com/koshien/digest/20170812_2d.html"
         },{
           "id": "5-3",
           "time": "14:30",
           "round": "2回戦",
-          "first": "北海",
           "isThirdHome": false,
-          "third": "神戸国際大付",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "北海",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "神戸国際大付",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081263.html",
           "video": "http://www.asahi.com/koshien/digest/20170812_3d.html"
         }
@@ -616,48 +645,60 @@
           "id": "6-1",
           "time": "08:00",
           "round": "2回戦",
-          "first": "大垣日大",
           "isThirdHome": false,
-          "third": "天理",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "大垣日大",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "天理",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081361.html",
           "video": "http://www.asahi.com/koshien/digest/20170813_1d.html"
         },{
           "id": "6-2",
           "time": "10:30",
           "round": "2回戦",
-          "first": "三本松",
           "isThirdHome": false,
-          "third": "下関国際",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "三本松",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "下関国際",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081362.html",
           "video": "http://www.asahi.com/koshien/digest/20170813_2d.html"
         },{
           "id": "6-3",
           "time": "13:00",
           "round": "2回戦",
-          "first": "明桜",
           "isThirdHome": false,
-          "third": "二松学舎大付",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "明桜",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "二松学舎大付",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081363.html",
           "video": "http://www.asahi.com/koshien/digest/20170813_3d.html"
         },{
           "id": "6-4",
           "time": "15:30",
           "round": "2回戦",
-          "first": "明豊",
           "isThirdHome": false,
-          "third": "坂井",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "明豊",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "坂井",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081364.html",
           "video": "http://www.asahi.com/koshien/digest/20170813_4d.html"
         }
@@ -669,48 +710,60 @@
           "id": "7-1",
           "time": "08:00",
           "round": "2回戦",
-          "first": "京都成章",
           "isThirdHome": false,
-          "third": "神村学園",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "京都成章",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "神村学園",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081461.html",
           "video": "http://www.asahi.com/koshien/digest/20170814_1d.html"
         },{
           "id": "7-2",
           "time": "10:30",
           "round": "2回戦",
-          "first": "高岡商",
           "isThirdHome": false,
-          "third": "東海大菅生",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "高岡商",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "東海大菅生",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081462.html",
           "video": "http://www.asahi.com/koshien/digest/20170814_2d.html"
         },{
           "id": "7-3",
           "time": "13:00",
           "round": "2回戦",
-          "first": "青森山田",
           "isThirdHome": false,
-          "third": "彦根東",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "青森山田",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "彦根東",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081463.html",
           "video": "http://www.asahi.com/koshien/digest/20170814_3d.html"
         },{
           "id": "7-4",
           "time": "15:30",
           "round": "2回戦",
-          "first": "済美",
           "isThirdHome": false,
-          "third": "津田学園",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "済美",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "津田学園",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081464.html",
           "video": "http://www.asahi.com/koshien/digest/20170814_4d.html"
         }
@@ -722,48 +775,60 @@
           "id": "8-1",
           "time": "08:00",
           "round": "2回戦",
-          "first": "盛岡大付",
           "isThirdHome": false,
-          "third": "",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "盛岡大付",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "松商学園",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081561.html",
           "video": "http://www.asahi.com/koshien/digest/20170815_1d.html"
         },{
           "id": "8-2",
           "time": "10:30",
           "round": "2回戦",
-          "first": "",
           "isThirdHome": false,
-          "third": "",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "前橋育英",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "明徳義塾",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081562.html",
           "video": "http://www.asahi.com/koshien/digest/20170815_2d.html"
         },{
           "id": "8-3",
           "time": "13:00",
           "round": "2回戦",
-          "first": "",
           "isThirdHome": false,
-          "third": "",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "日本航空石川",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "花咲徳栄",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081563.html",
           "video": "http://www.asahi.com/koshien/digest/20170815_3d.html"
         },{
           "id": "8-4",
           "time": "15:30",
           "round": "2回戦",
-          "first": "",
           "isThirdHome": false,
-          "third": "",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081564.html",
           "video": "http://www.asahi.com/koshien/digest/20170815_4d.html"
         }
@@ -775,36 +840,45 @@
           "id": "9-1",
           "time": "09:30",
           "round": "2回戦",
-          "first": "",
           "isThirdHome": false,
-          "third": "",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081661.html",
           "video": "http://www.asahi.com/koshien/digest/20170816_1d.html"
         },{
           "id": "9-2",
           "time": "12:00",
           "round": "2回戦",
-          "first": "",
           "isThirdHome": false,
-          "third": "",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081662.html",
           "video": "http://www.asahi.com/koshien/digest/20170816_2d.html"
         },{
           "id": "9-3",
           "time": "14:30",
           "round": "2回戦",
-          "first": "",
           "isThirdHome": false,
-          "third": "",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081663.html",
           "video": "http://www.asahi.com/koshien/digest/20170816_3d.html"
         }
@@ -816,48 +890,60 @@
           "id": "10-1",
           "time": "08:00",
           "round": "3回戦",
-          "first": "",
           "isThirdHome": false,
-          "third": "",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081761.html",
           "video": "http://www.asahi.com/koshien/digest/20170817_1d.html"
         },{
           "id": "10-2",
           "time": "10:30",
           "round": "3回戦",
-          "first": "",
           "isThirdHome": false,
-          "third": "",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081762.html",
           "video": "http://www.asahi.com/koshien/digest/20170817_2d.html"
         },{
           "id": "10-3",
           "time": "13:00",
           "round": "3回戦",
-          "first": "",
           "isThirdHome": false,
-          "third": "",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081763.html",
           "video": "http://www.asahi.com/koshien/digest/20170817_3d.html"
         },{
           "id": "10-4",
           "time": "15:30",
           "round": "3回戦",
-          "first": "",
           "isThirdHome": false,
-          "third": "",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081764.html",
           "video": "http://www.asahi.com/koshien/digest/20170817_4d.html"
         }
@@ -869,48 +955,60 @@
           "id": "11-1",
           "time": "08:00",
           "round": "3回戦",
-          "first": "",
           "isThirdHome": false,
-          "third": "",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081861.html",
           "video": "http://www.asahi.com/koshien/digest/20170818_1d.html"
         },{
           "id": "11-2",
           "time": "10:30",
           "round": "3回戦",
-          "first": "",
           "isThirdHome": false,
-          "third": "",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081862.html",
           "video": "http://www.asahi.com/koshien/digest/20170818_2d.html"
         },{
           "id": "11-3",
           "time": "13:00",
           "round": "3回戦",
-          "first": "",
           "isThirdHome": false,
-          "third": "",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2018081863.html",
           "video": "http://www.asahi.com/koshien/digest/20170818_3d.html"
         },{
           "id": "11-4",
           "time": "15:30",
           "round": "3回戦",
-          "first": "",
           "isThirdHome": false,
-          "third": "",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081864.html",
           "video": "http://www.asahi.com/koshien/digest/20170818_4d.html"
         }
@@ -922,48 +1020,60 @@
           "id": "12-1",
           "time": "08:00",
           "round": "準々決勝",
-          "first": "",
           "isThirdHome": false,
-          "third": "",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081961.html",
           "video": "http://www.asahi.com/koshien/digest/20170819_1d.html"
         },{
           "id": "12-2",
           "time": "10:30",
           "round": "準々決勝",
-          "first": "",
           "isThirdHome": false,
-          "third": "",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081962.html",
           "video": "http://www.asahi.com/koshien/digest/20170819_2d.html"
         },{
           "id": "12-3",
           "time": "13:00",
           "round": "準々決勝",
-          "first": "",
           "isThirdHome": false,
-          "third": "",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081963.html",
           "video": "http://www.asahi.com/koshien/digest/20170819_3d.html"
         },{
           "id": "12-4",
           "time": "15:30",
           "round": "準々決勝",
-          "first": "",
           "isThirdHome": false,
-          "third": "",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017081964.html",
           "video": "http://www.asahi.com/koshien/digest/20170819_4d.html"
         }
@@ -975,24 +1085,30 @@
           "id": "13-1",
           "time": "11:00",
           "round": "準決勝",
-          "first": "",
           "isThirdHome": false,
-          "third": "",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017082161.html",
           "video": "http://www.asahi.com/koshien/digest/20170821_1d.html"
         },{
           "id": "13-2",
           "time": "13:30",
           "round": "準決勝",
-          "first": "",
           "isThirdHome": false,
-          "third": "",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017082161.html",
           "video": "http://www.asahi.com/koshien/digest/20170821_2d.html"
         }
@@ -1004,12 +1120,15 @@
           "id": "14-1",
           "time": "13:00",
           "round": "決勝",
-          "first": "",
           "isThirdHome": false,
-          "third": "",
-          "score": "",
-          "fScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-          "tScore": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+          "first": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
+          "third": {
+            "name": "",
+            "scores": ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+          },
           "news": "http://www.asahi.com/koshien/text_sokuhou/2017082261.html",
           "video": "http://www.asahi.com/koshien/digest/20170822_1d.html"
         }

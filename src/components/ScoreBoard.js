@@ -10,8 +10,8 @@ import { getScore } from "../controller/controller";
 
 export default class ScoreBoard extends Component {
   renderScores = (scores) => {
-    return scores.map(score => (
-      <td>{score}</td>
+    return scores.map((score, index) => (
+      <td key={index}>{score}</td>
     ));
   };
 

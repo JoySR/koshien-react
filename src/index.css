@@ -140,6 +140,11 @@ img { border: none; }
   border-bottom: 2px dotted #ccc;
 }
 
+.section .message h3 {
+  color: orange;
+  margin: 20px auto;
+}
+
 @media (max-width: 480px) {
   .section h2 {
     font-size: 1.125em;
@@ -230,7 +235,8 @@ img { border: none; }
   color: #1e40a0;
 }
 
-.info span:hover {
+.info span:hover,
+.time.highlight {
   color: #fd6a06;
 }
 

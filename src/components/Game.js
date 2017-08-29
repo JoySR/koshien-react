@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import ScoreBoard from "./ScoreBoard";
-import { getPrefecture, getScore } from "../controller/controller";
+import {getPrefecture, getScore, shouldHighlightCurrentTime} from "../controller/controller";
+import classNames from 'classnames';
 
 export default class Game extends Component {
   state = {
-    shouldShowScoreBoard: false,
+    shouldShowScoreBoard: shouldHighlightCurrentTime(this.props.isCurrentDateToday, this.props.time)
   };
 
   toggleScoreBoard = () => {
@@ -16,7 +17,7 @@ export default class Game extends Component {
 
   render() {
     return (
-      <div className="single-game">
+      <div className="single-game" id={'g' + this.props.id}>
         <div className="school-school">
           <div className="info clearfix">
             <div className="round-wrap">
@@ -25,20 +26,47 @@ export default class Game extends Component {
             </div>
             <div className="time-wrap">
               <i className="fa fa-clock-o" />
-              <span className="time">{this.props.time}</span>
+              <span className={
+                classNames({
+                  time: true,
+                  highlight: shouldHighlightCurrentTime(this.props.isCurrentDateToday, this.props.time)
+                })
+              }>{this.props.time}</span>
             </div>
           </div>
-          <p className="first">
-            <span className="prefecture">({getPrefecture(this.props.first.name)})</span>
-            <span className="name">{this.props.first.name}</span>
-            <span className="final-score">{getScore(this.props.first.scores)}</span>
-          </p>
-          <span className="vs">-</span>
-          <p className="first">
-            <span className="final-score">{getScore(this.props.third.scores)}</span>
-            <span className="name">{this.props.third.name}</span>
-            <span className="prefecture">({getPrefecture(this.props.third.name)})</span>
-          </p>
+          {
+            this.props.first.name !== '' ?
+              <p className="first">
+                <span className="prefecture">({getPrefecture(this.props.first.name)})</span>
+                <span className="name">{this.props.first.name}</span>
+                {
+                  this.props.first.scores[8] !== "-" && this.props.third.scores[8] !== "-" ?
+                    <span className="final-score">
+                      {getScore(this.props.first.scores)}
+                    </span> : null
+                }
+              </p> : null
+          }
+          <span className="vs">
+            {
+              this.props.first.name === '' ?
+                '対戦カード未定' :
+                '-'
+            }
+          </span>
+          {
+            this.props.third.name !== '' ?
+              <p className="third">
+                {
+                  this.props.first.scores[8] !== "-" && this.props.third.scores[8] !== "-" ?
+                    <span className="final-score">
+                      {getScore(this.props.third.scores)}
+                    </span> : null
+                }
+                <span className="name">{this.props.third.name}</span>
+                <span className="prefecture">({getPrefecture(this.props.third.name)})</span>
+              </p> : null
+          }
         </div>
         {
           this.state.shouldShowScoreBoard ?
@@ -56,7 +84,13 @@ export default class Game extends Component {
             </div> :
             null
         }
-        <div onClick={this.toggleScoreBoard} className="show-more">詳細<span className={this.state.shouldShowScoreBoard ? "triangle-to-top" : "triangle-to-bottom"} /></div>
+        {
+          shouldHighlightCurrentTime(this.props.isCurrentDateToday, this.props.time) || this.props.first.scores[0] !== "-" || this.props.third.scores[0] !== "-" ?
+            <div onClick={this.toggleScoreBoard} className="show-more">
+              詳細
+              <span className={this.state.shouldShowScoreBoard ? "triangle-to-top" : "triangle-to-bottom"} />
+            </div> : null
+        }
       </div>
     );
   }

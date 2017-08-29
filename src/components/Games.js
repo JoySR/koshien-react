@@ -17,6 +17,7 @@ import Game from "./Game";
       newsLink: "",
       videoLink: ""
     }]
+    isCurrentDateToday={true || false}
   />
  */
 
@@ -26,13 +27,15 @@ const Games = (props) => (
       props.gameList.map(game => (
         <Game
           key={game.id}
+          id={game.id}
           round={game.round}
           time={game.time}
           first={game.first}
           third={game.third}
-          newsLink={game.news}
-          videoLink={game.video}
+          news={game.news}
+          video={game.video}
           isThirdHome={game.isThirdHome}
+          isCurrentDateToday={props.isCurrentDateToday}
         />
       ))
     }
